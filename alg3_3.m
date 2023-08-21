@@ -10,7 +10,7 @@ un = 2*u1n;
 while err1 > Eps1
    yn = 2*xn-x1n;
    rhon = 2*un-u1n;
-   wn = xn+theta*(xn-x1n);%theta=[0,1/4);
+   wn = xn+theta*(xn-x1n);
    sigman = un+theta*(un-u1n);
    zn = xn+beta*(xn-x1n);
    pn = wn-gamma*(D'*rhon+A'*(A*zn-b));
