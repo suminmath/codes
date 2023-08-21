@@ -14,7 +14,7 @@ while err2 > Eps1
     for i = 1:p
         etan(i) = max(0,un(i)+gDxn(i));
         un1(i) = max(0,etan(i)-(gDxn(i)-gDyn(i)));
-        m = m+(un(i)-etan(i))*D(i,:);%m¹æÄ£ÊÇ£¨1£¬N£©
+        m = m+(un(i)-etan(i))*D(i,:);
     end
     rn = yn+gamma*m';
     xn1 = max(0,min(rn,1));
