@@ -18,8 +18,7 @@ while err3 > Eps1
   end
   err3 = norm([(xn1-xn)',(un1'-un)'])/norm([xn',un']);
   Dx1n = Dxn;
-  Dxn = Dxn1;
-  %x1n = xn;
+  Dxn = Dxn1；
   u1n = un;
   xn = xn1;
   un = un1';
