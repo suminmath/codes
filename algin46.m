@@ -9,7 +9,7 @@ zn = 2*x0;
 un = 2*u0;
  while err4 > Eps1
    wn = zn+alphan*(zn-z1n);
-   mn = un+alphan*(un-u1n);%(·Ö¿é)
+   mn = un+alphan*(un-u1n);
    xnn = wn-gamma*(D'*mn+A'*(A*wn-b));
    xn = max(0,min(xnn,1));
    gDxn = gamma*D*xn;
